@@ -188,21 +188,102 @@
         }
 
         .instagram {
-            text-align: center;
-            padding: 80px;
-        }
-
-        .instagram-grid {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .instagram img {
-            width: 120px;
-            height: 120px;
-            border-radius: 10px;
-        }
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #f8f4f0;
+    }
+    .instagram-content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .instagram h2 {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #a58d7f;
+    }
+    .instagram h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px 0;
+        color: #333;
+    }
+    .instagram p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+    .read-more {
+        padding: 10px 20px;
+        background-color: #a58d7f;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .read-more:hover {
+        background-color: #8c7051;
+    }
+    .instagram-grid {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 30px;
+    }
+    .instagram-grid img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .footer-column h4 {
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: #333;
+    }
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+    .footer-column ul li {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+    .footer-column input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .subscribe {
+        margin-top: 10px;
+        padding: 10px;
+        width: 100%;
+        background-color: #a58d7f;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .footer-bottom {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #666;
+    }
+    .social-icons i {
+        font-size: 20px;
+        margin: 0 10px;
+        color: #333;
+        cursor: pointer;
+    }
 
         footer {
             background: #FFFEFA;
@@ -252,16 +333,64 @@
     </section>
     
     <section class="instagram">
-        <h2>Follow Us on Instagram</h2>
+        <div class="instagram-content">
+            <h2>Follow Us</h2>
+            <h3>CERAMICS_INSTAGRAM</h3>
+            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button class="read-more">Read More</button>
+        </div>
         <div class="instagram-grid">
             <img src="insta1.jpg" alt="Ceramic Art">
             <img src="insta2.jpg" alt="Pottery">
+            <img src="insta3.jpg" alt="Handmade Pottery">
+            <img src="insta4.jpg" alt="Clay Mugs">
+            <img src="insta5.jpg" alt="Ceramic Plates">
         </div>
     </section>
     
     <footer>
-        <p>&copy; 2025 Ceramic Shop. All Rights Reserved.</p>
-    </footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>CONTACT</h4>
+                <p>+1 234 567 890</p>
+                <p>123 Artisan Street, Brooklyn, NY</p>
+                <p>Weekdays: 9:30am - 5:30pm</p>
+                <p>Sunday: 10am - 3pm</p>
+            </div>
+            <div class="footer-column">
+                <h4>CUSTOMER SERVICES</h4>
+                <ul>
+                    <li>My Account</li>
+                    <li>Track Order</li>
+                    <li>Gift Card</li>
+                    <li>Shipping & Returns</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li>Our Story</li>
+                    <li>Job Opportunities</li>
+                    <li>Store Location</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>NEWSLETTER</h4>
+                <p>Subscribe for updates and exclusive offers.</p>
+                <input type="email" placeholder="Your email">
+                <button class="subscribe">SUBSCRIBE</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ceramic Shop. All Rights Reserved.</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+            </div>
+        </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
