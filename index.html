@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #FFFEFA;
+            color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 40px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-size: 16px;
+            margin: 0 15px;
+        }
+
+        .title {
+            font-size: 36px;
+            margin-top: 30px;
+        }
+
+        .search-bar {
+            margin: 20px auto;
+        }
+
+        .search-bar input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .search-bar button {
+            padding: 10px;
+            border: none;
+            background-color: #799CF0;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px auto;
+        }
+
+                .card {
+            max-width: 250px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            filter: grayscale(30%) contrast(1.2);
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #2b2b2b;
+            margin-top: 15px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #5a5a5a;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 8px 16px;
+            border: 1px solid #2b2b2b;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #2b2b2b;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #2b2b2b;
+            color: #fff;
+        }
+
+        .footer {
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 2px solid #799CF0;
+            position: relative;
+        }
+
+        .footer .footer-pattern {
+            width: 100%;
+            height: 30px;
+            background: url('https://via.placeholder.com/1200x30/799CF0/ffffff?text=Pattern') repeat-x;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Recipes</a>
+            <a href="#">Our Story</a>
+            <a href="#">Ask Us</a>
+        </nav>
+    </header>
+
+    <h1 class="title">Recipes</h1>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Know what you want? Search it!">
+        <button>&#128269;</button>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <img src="logo-removebg-preview.png" alt="Teapot Illustration">
+            <h3>✨ About Us</h3>
+            <p>Discover unique and meaningful bracelets.</p>
+            <a href="#" class="button">Explore</a>
+        </div>
+        <div class="card">
+            <img src="bracelet-removebg-preview.png" alt="Bowl Illustration">
+            <h3>💎 Explore Charms</h3>
+            <p>Browse a variety of exquisite bracelet designs.</p>
+            <a href="product.html" class="button">Explore by Category</a>
+        </div>
+        <div class="card">
+            <img src="charms-removebg-preview.png" alt="Stacked Cups Illustration">
+            <h3>🛍️ Create a Set Bracelet</h3>
+            <p>Customize a bracelet with your personal touch.</p>
+            <a href="product.html" class="button">Customize Now</a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-pattern"></div>
+        <p>Make us part of your style | Elegance in every detail</p>
+    </div>
+</body>
+</html>
